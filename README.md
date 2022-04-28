@@ -16,6 +16,7 @@
 #### AutoPublish
 > Publish any created Message on the Channel (you can specify the author(s) too)
 
+ - Notice: Pass Your Discord Client before you handle all your events.
 ```js
 // ESM
 import UtilClient from "@setar/utils"
@@ -24,6 +25,8 @@ import UtilClient from "@setar/utils"
 const { Client: UtilClient } = require("@setar/utils")
 
 const myUtils = new UtilClient(myBotClient);
+myBotClient.on('messageCreate', (message) => { /* DO WHATEVER */})
+
 myUtils.autoPublish('channel_id', ['admin_id', 'admin_id_2']);
 ```
 
