@@ -23,7 +23,12 @@
     "npm": ">=7.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --project ./tsconfig.json && npm run build:esm",
+    "build:esm": "gen-esm-wrapper ./dist/index.js ./dist/index.mjs",
+    "build:check": "tsc --project ./tsconfig.json --noEmit --incremental false",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write src/**/*.{ts,js,json,yaml,yml}"
   },
   "keywords": [
     "discord",
