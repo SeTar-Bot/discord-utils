@@ -1,5 +1,5 @@
 {
-  "name": "discord-utils",
+  "name": "@setar/utils",
   "version": "0.0.1",
   "description": "a module to help you automate some functions",
   "main": "dist/index.js",
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EhsanFox/discord-utils.git"
+    "url": "git+https://github.com/Setar-Bot/discord-utils.git"
   },
   "bugs": {
-    "url": "https://github.com/EhsanFox/discord-utils/issues"
+    "url": "https://github.com/Setar-Bot/discord-utils/issues"
   },
-  "homepage": "https://github.com/EhsanFox/discord-utils#readme",
+  "homepage": "https://github.com/Setar-Bot/discord-utils#readme",
   "engines": {
     "node": ">=14.9.1",
     "npm": ">=7.0.0"
